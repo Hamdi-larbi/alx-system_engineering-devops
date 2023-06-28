@@ -1,3 +1,8 @@
+#!/usr/bin/env bash
+# sets up a new 404 error page that contains
+# the string: Ceci n'est pas une page.
+
+sudo apt update
 sudo apt install -y nginx
 sudo ufw allow 'Nginx HTTP'
 echo "Hello World!" > /var/www/html/index.nginx-debian.html
